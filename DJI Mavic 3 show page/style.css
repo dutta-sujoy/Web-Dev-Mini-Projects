@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Kdam+Thmor+Pro&family=Oxanium:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 70px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon{
+    width: 40px;
+    pointer-events: none;
+    cursor: pointer;
+    /* display: none; */
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-family: 'Oxanium', sans-serif;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    transition: 0.3s;
+    background: -webkit-linear-gradient( #000,#eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left:50px ;
+}
+
+.col1 h2{
+    font-size: 55px;
+    background: -webkit-linear-gradient( #000,#676464);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.col1 h3{
+    font-size: 30px;
+    color: #676464;
+    margin: 10px 0 10px;
+    
+}
+
+.col1 p{
+    font-size: 16px;
+    color: #565151;
+    font-weight: 100;
+}
+.col1 h4{
+    font-size: 20px;
+    margin: 30px 0;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.col1 button img{
+    width: 15px;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    filter: invert();
+    display: none;
+    transition: 1s;
+}
+button{
+    font-size: 15px;
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff; 
+    background: linear-gradient(to right,  #000,#676464);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+button:hover img{
+    display: inline;
+    transition: 0.5s;
+    
+}
+.col1::after{
+    content: '';
+    width: 10px;
+    height: 60%;
+    background: linear-gradient(to right,  #000,#676464);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col2 .drone{
+    width: 100%;
+    
+}
+.color-box{
+    position: absolute;
+    right: 0;
+    top: -50%;
+    background: linear-gradient(to right,  #000,#676464);
+    border-radius: 60px  0 0 60px;
+    height: 200%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(100px);
+}
+
+.add-btn{
+    position: relative;
+    right: 30px;
+}
+.add-btn button{
+    background: transparent;
+    rotate: 45deg;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.add-btn:hover button{
+    rotate: 225deg;
+    background: gray;
+}
+.add-btn p{
+    position: relative;
+    width: 80px;
+    font-size: 16px;
+    left: -12px;
+    color: #fff;
+    
+
+}
+
+.social img{
+    position: relative;
+    height: 20px;
+    margin: 20px;
+    cursor: pointer;
+    top: -50px;
+}
+
+.social{
+    text-align: center;
+}
+@media only screen and (max-width: 700px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(to right,  #000,#676464);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+
+        pointer-events: all;
+        cursor: pointer;
+    }
+    #menu-list{
+        transition: 0.5s;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        margin-top: 120px;
+    }
+
+}
+
