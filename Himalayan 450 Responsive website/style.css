@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo{
+    width: 200Px;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.menu{
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    
+    
+
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+    
+    
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.col1{
+    position: relative;
+    
+}
+
+.col1 h2{
+    position: relative;
+    top: 70px;
+    font-size: 150px;
+    z-index: -1;
+    background: -webkit-linear-gradient( #464646,#ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.col1 img{
+    position: relative;
+    width: 1000px;
+    left: -100px;
+    top: -150px;
+    /* transform: translateX(-100px); */
+    /* transform: translateY(-150px); */
+
+    
+}
+
+.col2{
+    position: relative;
+    top: -160px;
+    left: -30px;
+    
+}
+
+.col2 h2{
+    font-size: 45px;
+
+}
+
+button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: none;
+    
+    border-style: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.463);
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.black{
+    background: black;
+}
+.white{
+    background: white;
+}
+.blue{
+    background: rgb(8, 69, 167);
+}
+
+@media only screen and (max-width: 700px){
+    nav ul{
+        width: 40%;
+        background: linear-gradient(to right,  #000,#676464);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        border-radius: 10px;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+    .col1 img{
+        align-items: center;
+        position: relative;
+        width: 68%;
+        left: 136px;
+    }
+    .col1{
+        margin-top: 50px;
+    }
+    button{
+        margin-right: 46px;
+    }
+    button .black{
+        margin-left: 20px;
+    }
+
+    .menu{
+        display: block;
+    }
+}
+
