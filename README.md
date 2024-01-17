@@ -10,3 +10,5 @@ Himalayan 450 Responsive website: https://dutta-sujoy.github.io/Web-Dev-Mini-Pro
 Responsive Navigation Bar: https://dutta-sujoy.github.io/Web-Dev-Mini-Projects/Responsive%20Navigation%20Bar/
 
 Amazon Clone: https://dutta-sujoy.github.io/Web-Dev-Mini-Projects/Amazon%20Clone/
+
+Rocket: https://dutta-sujoy.github.io/Web-Dev-Mini-Projects/Rocket/
