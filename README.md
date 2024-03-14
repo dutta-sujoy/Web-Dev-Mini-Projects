@@ -12,3 +12,5 @@ Responsive Navigation Bar: https://dutta-sujoy.github.io/Web-Dev-Mini-Projects/R
 Amazon Clone: https://dutta-sujoy.github.io/Web-Dev-Mini-Projects/Amazon%20Clone/
 
 Rocket: https://dutta-sujoy.github.io/Web-Dev-Mini-Projects/Rocket/
+
+Weather: https://dutta-sujoy.github.io/Web-Dev-Mini-Projects/Weather/
